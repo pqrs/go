@@ -54,13 +54,17 @@ go -a
 go [directory] [-a] [-l] [-r directory] [-h]
 ```
 
-* go [directory-name]
-Changes current working directory to *directory-name*. *directory-name* should have been added previously (see *go -a*).
-* go -a, -add
-	* Adds current working directory to the list of directories Go! will work with.
-* go -l, -list
-	* Shows full list of directories that have been added to Go!.
-* go -r, -remove [directory-name]
-	* Removes a [directory-name] from the list, i.e., *go -r foo* removes directory *foo* and can not be used again, unless it is added again.
-* go -h, -help
-	* Shows Go! help.
+**go [directory-name]**
+Changes current working directory to directory-name. directory-name should have been added previously (see go -a).
+
+**go -a, -add**
+Adds current working directory to the list of directories Go! will work with.
+
+**go -l, -list**
+Shows full list of directories that have been added to Go!.
+
+**go -r, -remove [directory-name]**
+Removes [directory-name] from the list, i.e., go -r foo removes directory foo and can not be used again, unless it is added again.
+
+**go -h, -help**
+Shows Go! help.
