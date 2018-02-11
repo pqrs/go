@@ -1,6 +1,8 @@
 # Go!
 
-Go! is a bash shell script to change the current working directory to one in a list of frequently used directories of your own.
+Go! is a bash shell script to change the current working directory to one in a list of directories of your own.
+
+It is intended to change quickly to frequently used directories, instead of having to use full paths or many *cd* commands to go from one directory to another.
 
 ## Getting Started
 
@@ -60,3 +62,9 @@ Command | Function
 **go -l, -list**|Shows full list of directories that have been added to Go!.
 **go -r, -remove [directory-name]**|Removes [directory-name] from the list, i.e., go -r foo removes directory foo and can not be used again, unless it is added again.
 **go -h, -help**|Shows Go! help.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details.
+
+Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
