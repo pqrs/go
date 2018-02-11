@@ -32,8 +32,7 @@ case $1 in
 
 	"-r"|"-remove"	)	sed "/$2:/d" $CONFIG_FILE;;
 
-	"-l"|"-list"	) 	echo
-						echo "go! - Copyright © 2009 Alvaro Piqueras."
+	"-l"|"-list"	) 	echo "go! - Copyright © 2009 Alvaro Piqueras."
 						echo "Current dir shortcuts are:"
 						echo
 						cat $CONFIG_FILE;;
@@ -45,7 +44,7 @@ case $1 in
 							dirtogofullpath=${LINE#*:}
 
 							if [ $dirtogo == $1 ]; then
-								cd $dirtogofullpath
+								cd $dirtogofullpath && ls
 								FOUND="1"
 							fi
 

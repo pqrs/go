@@ -2,15 +2,13 @@
 
 Go! is a bash shell script to change the current working directory to one in a list of frequently used directories of your own.
 
-**Caution: it doesn't work currently. Come back in a few days.**
-
 ## Getting Started
 
 These instructions will get you a copy of Go! up and running on your local machine.
 
 ### Prerequisites
 
-![Alt text](assets/BASH_logo-transparent-bg-bw.png?raw=true "GNU bash")
+![GNU bash](assets/BASH_logo-transparent-bg-bw.png?raw=true "GNU bash")
 
 Go! has been tested with:
 
@@ -19,29 +17,50 @@ Copyright (C) 2007 Free Software Foundation, Inc.*
 
 ### Installing
 
-You must download go.sh and copy it in a directory in your PATH, e.g., if you place it in ~/bashscripts and that folder it is not in your PATH you should add it with:
+You must download go.sh and copy it in the directory of your choice, it doesn't need to be in your path.
+
+Once copied, you must create an alias like this:
 
 ```
-PATH=$PATH:~/bashscripts
+alias go='. /full/path/to/script/go.sh'
 ```
 
-### Using it
-
-Once copied in your system and added to your PATH, you can just use it by typing:
+For example, if you place go.sh in a directory called bashscripts in your home folder, then you create this alias:
 
 ```
-go.sh [directory-name]
+alias go='. ~/bashscripts/go.sh'
 ```
 
-For example, to go to *my-folder* directory:
+**This is important since when you change directory within a script's shell, when the script finishes that shell exits, and then you are left in the directory you were. Doing it this way, you *source* the script instead of running it. Sourcing will run the script commands in the current shell process, therefore the command *cd* will have effect in it.**
+
+### Basic usage
 
 ```
-go.sh my-folder
+go [directory-name]
 ```
 
-It is strongly recommended that you create an alias to save you some typing, e.g. *go*:
+By typing this, your working directory will be changed to *directory-name*, wherever in your system it is.
+
+**Important note:** Previously, you had to add *directory-name* to the list of directories Go! will use. You can do this by typing:
 
 ```
-alias go=go.sh
+cd /path/to/directory-name
+go -a
 ```
 
+### Full list of options
+
+```
+go [directory] [-a] [-l] [-r directory] [-h]
+```
+
+1. go [directory-name]
+	1. Changes current working directory to *directory-name*. *directory-name* should have been added previously (see *go -a*).
+1. go -a, -add
+	1. Adds current working directory to the list of directories Go! will work with.
+1. go -l, -list
+	1. Shows full list of directories that have been added to Go!.
+1. go -r, -remove [directory-name]
+	1. Removes a [directory-name] from the list, i.e., *go -r foo* removes directory *foo* and can not be used again, unless it is added again.
+1. go -h, -help
+	1. Shows Go! help.
