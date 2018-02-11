@@ -1,0 +1,13 @@
+{
+    "name": "pqrs/go",
+    "description": "Change the current working directory to one in a list of frequently used directories of your own",
+    "license": "GPLv3+",
+    "authors": [
+        {
+            "name": "pqrs",
+            "email": "pqrs@pqrs.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
