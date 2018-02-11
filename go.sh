@@ -3,8 +3,7 @@
 CONFIG_FILE="$HOME/go.cfg"
 
 function needhelp {
-	echo
-	echo "go! - Copyright © 2009 Alvaro Piqueras."
+	echo "go! - Copyright © 2009-18 Alvaro Piqueras."
 	echo "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>."
     echo "This is free software: you are free to change and redistribute it."
 	echo "There is NO WARRANTY, to the extent permitted by law."
@@ -13,10 +12,10 @@ function needhelp {
 	echo
 	echo "Options:"
 	echo
-	echo "	-a, -add		Adds current directory to the list in go.cfg for later use."
-	echo "	-l, -list		Lists current defined shortcuts in go.cfg."
-	echo "	-r, -remove		Removes a directory from the list, i.e. 'go -r foo' removes directory 'foo'."
-	echo "	-h, -help		Shows this help."
+	echo "	-a, -add	 Adds current directory to the list in go.cfg for later use."
+	echo "	-l, -list	 Lists current defined shortcuts in go.cfg."
+	echo "	-r, -remove	 Removes a directory from the list, i.e. 'go -r foo' removes directory 'foo'."
+	echo "	-h, -help	 Shows this help."
 	echo
 }
 
@@ -30,9 +29,9 @@ case $1 in
 						LAUNCHER=$(basename $CURRENT_DIR)
 						echo $LAUNCHER:$CURRENT_DIR >> $CONFIG_FILE;;
 
-	"-r"|"-remove"	)	sed "/$2:/d" $CONFIG_FILE;;
+	"-r"|"-remove"	)	sed -i "" "/$2:/d" $CONFIG_FILE;;
 
-	"-l"|"-list"	) 	echo "go! - Copyright © 2009 Alvaro Piqueras."
+	"-l"|"-list"	) 	echo "go! - Copyright © 2009-18 Alvaro Piqueras."
 						echo "Current dir shortcuts are:"
 						echo
 						cat $CONFIG_FILE;;
@@ -44,7 +43,7 @@ case $1 in
 							dirtogofullpath=${LINE#*:}
 
 							if [ $dirtogo == $1 ]; then
-								cd $dirtogofullpath && ls
+								cd $dirtogofullpath
 								FOUND="1"
 							fi
 
