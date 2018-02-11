@@ -17,9 +17,14 @@ Go! has been tested with:
 * *GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin15)
 Copyright (C) 2007 Free Software Foundation, Inc.*
 
+* *GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2013 Free Software Foundation, Inc.*
+
+There is a slight difference between linux and mac versions. Download the right one that suites your OS.
+
 ### Installing
 
-You must download go.sh and copy it in the directory of your choice, it doesn't need to be in your path.
+You must download go.sh (linux or mac) and copy it in the directory of your choice, it doesn't need to be in your path.
 
 Once copied, you must create an alias like this:
 
