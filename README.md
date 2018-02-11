@@ -2,6 +2,8 @@
 
 Go! is a bash shell script to change the current working directory to one in a list of frequently used directories of your own.
 
+**Caution: it doesn't work currently. Come back in a few days.**
+
 ## Getting Started
 
 These instructions will get you a copy of Go! up and running on your local machine.
