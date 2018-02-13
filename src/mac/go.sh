@@ -30,7 +30,12 @@ case $1 in
 						LAUNCHER=$(basename $CURRENT_DIR)
 						echo $LAUNCHER:$CURRENT_DIR >> $CONFIG_FILE;;
 
-	"-r"|"-remove"	)	sed -i "" "/$2:/d" $CONFIG_FILE;;
+	"-r"|"-remove"	)	if [ "$2" == "" ]; then
+							echo "Usage: go -r directory"
+						else
+							sed -i "" "/$2:/d" $CONFIG_FILE
+						fi;;
+
 
 	"-l"|"-list"	) 	echo "Go! - Copyright © 2009-2018 Alvaro Piqueras."
 						echo "Currently defined directories:"
