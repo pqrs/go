@@ -65,14 +65,14 @@ Command | Function
 **go [directory-name]**|Changes current working directory to directory-name. directory-name should have been added previously (see go -a).
 **go -a, -add**|Adds current working directory to the list of directories Go! will work with.
 **go -l, -list**|Shows full list of directories that have been added to Go!.
-**go -r, -remove [directory-name]**|Removes [directory-name] from the list, i.e., go -r foo removes directory foo and can not be used again, unless it is added again.
+**go -r, -remove [directory-name]**|Removes [directory-name] from the list, i.e., go -r foo removes directory foo and can not be used again, unless it is newly added.
 **go -h, -help**|Shows Go! help.
 
 ## Credits
 
 **Alvaro Piqueras** - [pqrs](https://github.com/pqrs)
 
-Go! was born under MS-DOS somewhen between 1993 and 1995, can't remember exactly. First as an MS-DOS batch script (although highly powered with [4DOS](https://en.wikipedia.org/wiki/4DOS)), and later as program written in C. All that code is [lost in time like tears in rain](https://en.wikipedia.org/wiki/Tears_in_rain_monologue). Those versions of Go! program scanned all the directories in the hard drive and you could use Go! to go to any of them.
+Go! was born under MS-DOS somewhen between 1993 and 1995, can't remember exactly. First as an MS-DOS batch script (although highly powered with [4DOS](https://en.wikipedia.org/wiki/4DOS)), and later as a compiled program written in C. All that code is [lost in time like tears in rain](https://en.wikipedia.org/wiki/Tears_in_rain_monologue). Those versions of Go! scanned all the directories in the hard drive and you could use Go! to go to any of them.
 
 Many years after, in 2009, I ported the idea to GNU bash. Now you have to indicate what directories you want to use it with, adding them one at a time, since systems nowadays have lots of them, many with repeated names. I probably used some code I found somewhere online since I didn't have much bash skills then, but can't say how much or whose it was, sorry. Now, I'm learning about GitHub, one of my (many) unfinished businesses, so this is why you find this code here :)
 
