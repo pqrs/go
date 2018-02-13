@@ -24,7 +24,7 @@ There is a slight difference between linux and mac versions. Download the one th
 
 ### Installing
 
-Just download the file *go.sh* you'll find in [src folder](src) folder (linux or mac version) and copy it in the directory of your choice, it doesn't need to be in your path.
+Just download the file *go.sh* you'll find in [src folder](src) folder ([linux](src/linux) or [mac](src/mac) version) and copy it in the directory of your choice, it doesn't need to be in your path.
 
 Once copied, you must create an alias like this:
 
