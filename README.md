@@ -20,11 +20,11 @@ Copyright (C) 2007 Free Software Foundation, Inc.*
 * *GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
 Copyright (C) 2013 Free Software Foundation, Inc.*
 
-There is a slight difference between linux and mac versions. Download the right one that suites your OS.
+There is a slight difference between linux and mac versions. Download the one that suites your OS.
 
 ### Installing
 
-You must download go.sh (linux or mac) and copy it in the directory of your choice, it doesn't need to be in your path.
+Just download the file *go.sh* you'll find in [src folder](src) folder (linux or mac version) and copy it in the directory of your choice, it doesn't need to be in your path.
 
 Once copied, you must create an alias like this:
 
@@ -32,7 +32,7 @@ Once copied, you must create an alias like this:
 alias go='. /full/path/to/script/go.sh'
 ```
 
-For example, if you place go.sh in a directory called bashscripts in your home folder, then you must create this alias:
+For example, if you place go.sh in a directory called *bashscripts* in your home folder, then you must create this alias:
 
 ```
 alias go='. ~/bashscripts/go.sh'
@@ -68,7 +68,7 @@ Command | Function
 **go -r, -remove [directory-name]**|Removes [directory-name] from the list, i.e., go -r foo removes directory foo and can not be used again, unless it is added again.
 **go -h, -help**|Shows Go! help.
 
-## Author
+## Credits
 
 **Alvaro Piqueras** - [pqrs](https://github.com/pqrs)
 
