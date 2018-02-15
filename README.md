@@ -1,4 +1,4 @@
-![Go!](assets.go.gif)
+![Go!](assets/go.gif)
 
 # Go!
 
