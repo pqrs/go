@@ -1,3 +1,5 @@
+![Go!](assets.go.gif)
+
 # Go!
 
 Go! is a bash shell script to change the current working directory to one in a list of directories of your own.
