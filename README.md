@@ -22,7 +22,9 @@ Copyright (C) 2007 Free Software Foundation, Inc.*
 * *GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
 Copyright (C) 2013 Free Software Foundation, Inc.*
 
-There is a slight difference between linux and mac versions. Download the one that suites your OS.
+* *zsh 5.9 (x86_64-apple-darwin22.0)
+
+There is a slight difference between linux and mac versions. Download the one that suites your OS or your shell.
 
 ### Installing
 
